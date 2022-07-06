@@ -3,5 +3,8 @@
     <h1>Media Watch List</h1>
     <p class="description">Keeping track of the media I want to watch.</p>
   </header>
-  <mw-media-item></mw-media-item>
+  <!-- From media-item.component, we bind its property mediaItem, to firstMediaItem, from app.component
+    We are able to do this because @Input mediaItem exposes the property to parent components
+   -->
+  <mw-media-item [mediaItem] = "firstMediaItem"></mw-media-item>
 </section>
